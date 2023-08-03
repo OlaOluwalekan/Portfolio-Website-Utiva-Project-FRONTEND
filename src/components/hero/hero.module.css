@@ -1,0 +1,54 @@
+.main {
+  background: var(--aliceBlue);
+  padding: 70px 0;
+}
+
+.main > div {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main > div > img {
+  width: 80%;
+}
+
+.main > div > section > h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: var(--purpleBlue);
+}
+
+.main.dark {
+  background-color: var(--darkPurpleBlue);
+  color: var(--mainWhite);
+}
+
+.main > div > section > h2 > span {
+  color: var(--dullRed);
+}
+
+.main > div > section > p {
+  line-height: 25px;
+}
+
+.main > div > section > p > span {
+  color: var(--purpleBlue);
+}
+
+@media screen and (min-width: 800px) {
+  .main > div {
+    flex-direction: row;
+    width: 80%;
+    max-width: 1100px;
+    text-align: left;
+  }
+
+  .main > div > img {
+    width: 60%;
+  }
+}

@@ -1,0 +1,21 @@
+.main {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 30px;
+  aspect-ratio: 1;
+  cursor: pointer;
+  border: 1px solid var(--mainBlack);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--midTransition);
+}
+
+.main.dark {
+  background-color: var(--mainBlack);
+  color: var(--mainWhite);
+  transform: rotate(180deg);
+  border: 1px solid var(--mainWhite);
+}
