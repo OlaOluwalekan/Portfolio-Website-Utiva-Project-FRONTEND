@@ -1,12 +1,13 @@
 import styles from '../css/navbar.module.css'
+import { Link } from 'react-router-dom'
 
 const Logo = () => {
   return (
-    <div className={styles.logo}>
+    <Link className={styles.logo} to='/'>
       <article>
         Bells<span>Arena</span>
       </article>
-    </div>
+    </Link>
   )
 }
 export default Logo

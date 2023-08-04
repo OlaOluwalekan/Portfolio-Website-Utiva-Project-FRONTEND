@@ -1,0 +1,133 @@
+.main {
+  padding: 80px 0;
+  background-color: var(--aliceBlue);
+}
+
+.main.dark {
+  color: var(--mainWhite);
+  background-color: var(--darkPurpleBlue);
+}
+
+.main > div {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main > div > h2 {
+  color: var(--purpleBlue);
+  margin-bottom: 20px;
+}
+
+.main > div > section {
+  width: 100%;
+}
+
+.main > div > section > section {
+  width: 250px;
+  background-color: var(--mainWhite);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 0px var(--purpleBlue);
+  transition: var(--midTransition);
+}
+
+.main.dark > div > section > section {
+  background-color: var(--mainBlack);
+  box-shadow: 1px 1px 3px var(--mainBlack);
+}
+
+.main > div > section > section:hover {
+  box-shadow: 5px 5px 3px var(--purpleBlue);
+}
+
+.main.dark > div > section > section:hover {
+  box-shadow: 5px 5px 3px var(--mainBlack);
+}
+
+.main > div > section > section:hover > div > article {
+  height: 100%;
+}
+
+.main > div > section > section > div {
+  width: 100%;
+  height: 150px;
+  border: 1px dashed var(--purpleBlue);
+  position: relative;
+}
+
+.main > div > section > section > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.main > div > section > section > div > article {
+  width: 100%;
+  height: 0;
+  top: 0;
+  background-color: #ffffffea;
+  position: absolute;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: var(--midTransition);
+  overflow: hidden;
+}
+
+.main.dark > div > section > section > div > article {
+  background-color: #000000dc;
+}
+
+.main > div > section > section > div > article > a {
+  text-decoration: none;
+  display: block;
+  padding: 5px 20px;
+  color: var(--purpleBlue);
+  background-color: var(--greyishWhite);
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.main.dark > div > section > section > div > article > a {
+  background-color: var(--darkPurpleBlue);
+}
+
+.main > div > section > section > article {
+  margin-top: 10px;
+}
+
+.main > div > section > section > article > p {
+  color: var(--purpleBlue);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.main > div > section > section > article > article {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px 10px;
+}
+
+.main > div > section > section > article > article > span {
+  font-size: 10px;
+  background-color: var(--greyishWhite);
+  padding: 3px 6px;
+  border-radius: 3px;
+  color: var(--dullRed);
+  font-weight: 600;
+}
+
+.main.dark > div > section > section > article > article > span {
+  background-color: var(--darkPurpleBlue);
+}
+
+/* DESKTOP SCREEN */
+@media screen and (min-width: 700px) {
+  .main > div {
+    width: 80%;
+    max-width: 1100px;
+  }
+}

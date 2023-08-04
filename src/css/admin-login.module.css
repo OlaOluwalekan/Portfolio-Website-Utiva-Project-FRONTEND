@@ -1,0 +1,23 @@
+.main > div {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main > div > form {
+  width: 90%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+}
+
+.main > div > form > input {
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.main > div > form > button {
+  margin: 10px 0;
+  padding: 10px 0;
+  cursor: pointer;
+}

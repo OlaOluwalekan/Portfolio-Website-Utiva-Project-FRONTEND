@@ -12,6 +12,7 @@
   font-weight: 700;
   color: var(--purpleBlue);
   letter-spacing: 2px;
+  text-decoration: none;
 }
 
 .logo > article > span {
