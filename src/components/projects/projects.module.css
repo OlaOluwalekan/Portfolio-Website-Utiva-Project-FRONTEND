@@ -20,10 +20,14 @@
 
 .main > div > section {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 .main > div > section > section {
-  width: 250px;
+  width: 300px;
   background-color: var(--mainWhite);
   padding: 10px;
   border-radius: 5px;
@@ -50,7 +54,7 @@
 
 .main > div > section > section > div {
   width: 100%;
-  height: 150px;
+  height: 200px;
   border: 1px dashed var(--purpleBlue);
   position: relative;
 }
