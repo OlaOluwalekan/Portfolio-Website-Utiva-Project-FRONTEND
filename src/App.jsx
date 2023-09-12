@@ -7,6 +7,8 @@ import { useSelector } from 'react-redux'
 import ProtectedRoute from './pages/ProtectedRoute'
 import Admin from './pages/Admin'
 import AdminLogin from './pages/AdminLogin'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 const App = () => {
   const { darkMode } = useSelector((store) => store.general)
@@ -29,6 +31,12 @@ const App = () => {
           </Route>
         </Routes>
       </BrowserRouter>
+
+      <ToastContainer
+        position='top-right'
+        autoClose={1500}
+        pauseOnFocusLoss={false}
+      />
 
       <DarkMode />
     </div>

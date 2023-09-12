@@ -1,6 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 import customFetch from '../utils/axios'
 import { addSubToLocalStorage } from '../utils/localStorage'
+import { toast } from 'react-toastify'
 
 const initialState = {
   isLoading: false,
@@ -55,10 +56,12 @@ const subscriberSlice = createSlice({
         state.subscriber = payload
         addSubToLocalStorage(payload)
         state.codeIsOpen = true
+        toast.success('Verification mail sent')
       })
       .addCase(createSubscriber.rejected, (state, { payload }) => {
         state.isLoading = false
         console.log(payload)
+        toast.error(payload)
       })
       .addCase(verifyEmail.pending, (state) => {
         state.isLoading = true
@@ -68,10 +71,12 @@ const subscriberSlice = createSlice({
         state.subscriber = payload
         addSubToLocalStorage(payload)
         state.codeIsOpen = false
+        toast.success('Email Verified')
       })
       .addCase(verifyEmail.rejected, (state, { payload }) => {
         state.isLoading = false
         console.log(payload)
+        toast.error(payload)
       })
   },
 })
