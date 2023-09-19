@@ -23,7 +23,10 @@ const Hero = () => {
             every endeavor. Let's connect and create something extraordinary
             together. Welcome to my <span>Arena</span>
           </p>
-          <Link to='/resume' target='_blank'>
+          <Link
+            to='https://res.cloudinary.com/dyyoorpns/image/upload/v1695117245/Bells%20Arena/static%20assets/pdf/resume_19092023.pdf'
+            target='_blank'
+          >
             View My Resume (CV)
           </Link>
         </section>
