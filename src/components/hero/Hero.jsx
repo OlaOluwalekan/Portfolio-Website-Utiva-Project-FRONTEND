@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux'
 import styles from './hero.module.css'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   const { darkMode } = useSelector((store) => store.general)
@@ -22,6 +23,9 @@ const Hero = () => {
             every endeavor. Let's connect and create something extraordinary
             together. Welcome to my <span>Arena</span>
           </p>
+          <Link to='/resume' target='_blank'>
+            View My Resume (CV)
+          </Link>
         </section>
         <img
           src='https://res.cloudinary.com/dyyoorpns/image/upload/v1691060453/Bells%20Arena/static%20assets/hero/hero-image_dbmcwg.png'

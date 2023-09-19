@@ -9,6 +9,7 @@ import Admin from './pages/Admin'
 import AdminLogin from './pages/AdminLogin'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import Resume from './pages/Resume'
 
 const App = () => {
   const { darkMode } = useSelector((store) => store.general)
@@ -28,6 +29,7 @@ const App = () => {
               }
             />
             <Route path='admin/login' element={<AdminLogin />} />
+            <Route path='resume' element={<Resume />} />
           </Route>
         </Routes>
       </BrowserRouter>

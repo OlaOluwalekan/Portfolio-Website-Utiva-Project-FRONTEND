@@ -40,6 +40,16 @@
   color: var(--purpleBlue);
 }
 
+/* RESUME */
+.main > div > section > a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 20px 0;
+  background-color: var(--purpleBlue);
+  color: var(--mainWhite);
+  padding: 10px;
+}
+
 @media screen and (min-width: 800px) {
   .main > div {
     flex-direction: row;
